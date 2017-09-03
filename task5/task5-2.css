@@ -17,6 +17,10 @@ body{
     line-height: 200%;
     text-align: center;
 }
+.header-img {
+    float: right;
+    margin: 2% 4% 0 0;
+}
 .header-box {
     margin: 0 30%;
     background: #55a8b3;
@@ -38,10 +42,6 @@ body{
 }
 .header-left, .header-right {
     padding: 3% 0;
-}
-#header img {
-    float: right;
-    margin: 1% 4% 0 0;
 }
 /*#header{
 	display: flex;
@@ -93,6 +93,7 @@ body{
     margin-top: 4%;
     margin-right: 10%;
 }
+
 #choose>div:last-child{
 	border-style: none;
 }
@@ -116,12 +117,13 @@ body{
 }
 #main p{
 	white-space:nowrap;
-	margin-right: 2rem;
+	margin-right: 1rem;
 	color: #E63B0E;
 }
 #footer{
 	display: flex;
 	justify-content: space-around;
+	text-align: center;
 }
 .footer-left,.footer-right{
 	display: flex;
