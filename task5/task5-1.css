@@ -78,8 +78,10 @@ body{
 #main ul{
 	list-style: none;	 
 }
+#main ul li:first child{
+	border-bottom:1px solid #E1E5E7;
+}
 #main ul li{
-	border-top: 1px solid #E1E5E7;
 	border-bottom:1px solid #E1E5E7;
 	padding: 3% 0;
 }
@@ -87,29 +89,6 @@ body{
 	display: flex;
 	flex-direction: row;
 }
-/*.main-left,.main-intro{
-	padding-right: 4%;
-}
-.main-base{
-	padding-right: 3%;
-	color: #999999;
-}
-.main-content.price{
-	color: #E26163;
-}
-.main-content,.main-right,.main-else{
-	padding-left: 5%;
-	border-left:2px solid #E1E5E7;
-}
-#main p{
-	align-self: center;
-}
-.main-intro,.main-top span{
-	white-space:nowrap;
-}
-.main-intro{
-	color: #999999;
-}*/
 .main-left{
 	padding-right: 3%;
 }
