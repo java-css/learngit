@@ -1,0 +1,249 @@
+/*头部*/
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 48px;
+    background-color: #5fc0cd;
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.header .s1 {
+    display: inline-block;
+    background-color: #55a8b3;
+    font-size: 17px;
+    width: 75px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+.header .s2 {
+    display: inline-block;
+    background-color: white;
+    font-size: 17px;
+    width: 75px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    color: #5fc0cd;
+    margin-left: -10px;
+    border: none;
+}
+
+.header .s3 {
+    position: relative;
+    top: -30px;
+    right: 20px;
+    float: right;
+}
+/*.header .s3 {
+    top: 2px;
+    right: 10px;
+    width: 2.625rem;
+    height: 2.75rem;
+    background: url(../images/t6.png) no-repeat -7.75rem -0.625rem;
+    position: fixed;
+    cursor: pointer;
+}*/
+/*菜单选择*/
+.menu {
+    margin-top: 44px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e1e5e7;
+}
+.menu>div {
+    width: 33.33%;
+    float: left;
+    line-height: 40px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropbtn {
+    background-color: #fff;
+    color: #999;
+    padding:15px;
+    font-size:1rem;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn .s1 {
+    margin-top: 18px;
+    float: right;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #999;
+}
+
+.split {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 1px;
+    height: 40px;
+    background: url("../images/split.png");
+    background-size: cover;
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: #999;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+/*主题部分*/
+.list > div {
+    width: 100%;
+    padding: 16px;
+    border-bottom: 1px solid #e1e5e7;
+    box-sizing: border-box;
+}
+
+.list > div:last-child {
+    margin-bottom: 100px;
+}
+
+.s-ser {
+    width: 100%;
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+    padding-left: 32px;
+    margin-bottom: 10px;
+    background: url(../images/t6.png) no-repeat -186px -132px;
+
+}
+
+.s-time {
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.s-time .s1 {
+    display: inline-block;
+    width: 65%;
+    padding-left: 32px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.s-time .s2 {
+    position: absolute;
+    right: 40px;
+    color: red;
+}
+
+.s-time .s3 {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 19px; 
+    height: 33px;
+    margin-top: -2px;
+    margin-left: 10px;
+    background: url(../images/t6.png) no-repeat -76px -124px;
+}
+
+.s-local {
+    width: 100%;
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+    padding-left: 32px;
+    background: url(../images/t6.png) no-repeat -124px -74px;
+}
+/*页脚*/
+.footer {
+    position: relative;
+    height: 100px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8fafb;
+    text-align: center;
+    box-sizing: border-box;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.footer span:first-child, .footer span:last-child {
+    margin: 16px 0;
+}
+
+.footer .s1 {
+    display: inline-block;
+    width: 46px;
+    height: 94px;
+    background: url(../images/t6.png) no-repeat -10px -124px;
+    float: left;
+    padding-top: 50px;
+    font-size: 10px;
+    color: #5fc0cd;
+    cursor: pointer;
+}
+
+.footer .s2 {
+    display: inline-block;
+    width: 94px;
+    height: 94px;
+    background: url(../images/t6.png) no-repeat -10px -10px;
+    cursor: pointer;
+}
+
+.footer .s3 {
+    width: 42px;
+    height: 41px;
+    background: url(../images/t6.png) no-repeat -186px -10px;
+    float: right;
+    padding-top: 50px;
+    font-size: 10px;
+    color: #999999;
+    cursor: pointer;
+}
