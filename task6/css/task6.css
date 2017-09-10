@@ -1,4 +1,4 @@
-/*头部*/
+﻿/*头部*/
 .header {
     position: fixed;
     top: 0;
@@ -60,7 +60,7 @@
 .menu>div {
     width: 33.33%;
     float: left;
-    line-height: 40px;
+    line-height: 20px;
     box-sizing: border-box;
     position: relative;
     text-align: center;
@@ -77,7 +77,7 @@
     cursor: pointer;
 }
 .dropbtn .s1 {
-    margin-top: 18px;
+    margin-top: 8px;
     float: right;
     width: 0;
     height: 0;
@@ -89,7 +89,7 @@
 .split {
     position: absolute;
     right: 0;
-    top: 15px;
+    top: 5px;
     width: 1px;
     height: 40px;
     background: url("../images/split.png");
@@ -134,7 +134,8 @@
 /*主题部分*/
 .list > div {
     width: 100%;
-    padding: 10px;
+    height: 90px;
+    padding: 16px;
     border-bottom: 1px solid #e1e5e7;
     box-sizing: border-box;
 }
@@ -146,17 +147,18 @@
 .s-ser {
     width: 100%;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 14px;
     color: #999999;
-    padding-left: 30px;
+    padding-left: 18px;
     margin-bottom: 10px;
-    background: url(../images/t6.png) no-repeat -186px -132px;
+    background: url(../images/t6.png) no-repeat -93px -66px;
+    background-size: auto 87px;
 
 }
 
 .s-time {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 14px;
     margin-bottom: 10px;
     width: 100%;
     position: relative;
@@ -165,11 +167,11 @@
 
 .s-time .s1 {
     display: inline-block;
-    width: 65%;
-    padding-left: 25px;
+    width: 50%;
+    padding-left: 15px;
     overflow: hidden;
-    white-space: nowrap;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .s-time .s2 {
@@ -184,7 +186,6 @@
     display: inline-block;
     width: 9.5px; 
     height: 16.5px;
-    margin-top: 5px;
     margin-left: 10px;
     background: url(../images/t6.png) no-repeat -38px -62px;
     background-size: auto 87px;
@@ -193,17 +194,18 @@
 .s-local {
     width: 100%;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 13px;
     color: #999999;
-    padding-left: 30px;
-    background: url(../images/t6.png) no-repeat -124px -74px;
+    padding-left: 18px;
+    background: url(../images/t6.png) no-repeat -62px -37px;
+    background-size: auto 87px;
 }
 /*页脚*/
 .footer {
     position: fixed;
-    bottom: 0;
+    bottom: -15px;
     width: 100%;
-    height: 10%;
+    line-height: 47px;
     background-color: #f8fafb;
     text-align: center;
     box-sizing: border-box;
@@ -219,12 +221,10 @@
 }
 .footer .s1 {
     display: inline-block;
-    width: 23px;
-    height: 47px;
+    padding-top: 12px;
     background: url(../images/t6.png) no-repeat -5px -62px;
     background-size: auto 87px;
     float: left;
-    padding-top: 32px;
     font-size: 10px;
     color: #5fc0cd;
     cursor: pointer;
@@ -240,12 +240,11 @@
 }
 
 .footer .s3 {
-    width: 21px;
-    height: 20.5px;
+	padding-top: 12px;
+	display: inline-block;
     background: url(../images/t6.png) no-repeat -93px -5px;
     background-size: auto 87px;
     float: right;
-    padding-top: 32px;
     font-size: 10px;
     color: #999999;
     cursor: pointer;
