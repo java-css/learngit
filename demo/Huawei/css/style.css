@@ -1,0 +1,623 @@
+@charset "utf-8";
+/*css Document*/
+html,body,ul,li,ol,h1,h2,h3,h4,h5,h6,input,p,span,dl,dt,dd,a,img,button,article,aside,footer,header,nav,section,figure {
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial,"Microsoft YaHei";
+	font-size: 12px;
+	color: #333;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #006ad0;
+}
+
+/* common */
+.wrapper {
+	width: 1440px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* header */
+#headerWrap {
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	border-bottom: 1px solid #e5e5e5;
+	background: #fff;
+	box-shadow: 0px 2px 8px rgba(0,0,0,0,0.1);
+	transition: all 1s;
+}
+
+.headerIn {
+	padding: 6px 15px;
+}
+
+.loginInfo {
+	width: 100%;
+	font-size: 14px;
+	height: 28px;
+	line-height: 28px;
+	transition: all 0.4s;
+}
+
+.loginInfo ul {
+	float: right;
+	overflow: hidden;
+}
+
+.loginInfo ul li {
+	float: left;
+	margin: 0 20px;
+}
+
+.indexNav {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+}
+
+.logo {
+	float: left;
+}
+
+.logo a {
+	display: block;
+}
+
+.nav {
+	float: left;
+	margin-left: 30px;
+	font-size: 16px;
+}
+
+.nav li {
+	float: left;
+	height: 46px;
+	margin: 0 12px;
+}
+
+.nav li a {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: block;
+	color: #333;
+	text-decoration: none;
+	border-bottom: 2px solid rgba(203,48,52,0);
+	transition: all 0.3s;
+}
+
+.nav li a:hover {
+	color: #e22835;
+	border-bottom: 2px solid rgba(203,48,52,1);
+}
+.nav .current span {
+	display: block;
+	height: 40px;
+	padding: 0 15px 0 36px;
+	background: #eee;
+	border-radius: 5px;
+}
+
+.nav .current a:hover span {
+	background: #dd0011;
+	color: #fff;
+}
+
+.nav .current a:hover i {
+	background-position: 0 -16px;
+}
+.nav .current i {
+	position: absolute;
+	width:14px;
+	height:14px;
+	top: 12px;
+	left: 15px;
+	background: url(../images/user_icon.png) no-repeat;
+	margin-right: 10px;
+}
+
+.navRight {
+	float: right;
+}
+
+.searchIco {
+	float: left;
+	width: 24px;
+	height: 24px;
+	background: url(../images/hw1_sprite.png) no-repeat -41px -71px;
+	margin-top: 10px;
+}
+
+.searchIco:hover { 
+	background-position: -41px -105px;
+}
+
+
+/* banner */
+#banner {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+.bannerIn {
+	width: 100%;
+	height: 540px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.bannerInfo {
+	position: absolute;
+	width: 372px;
+	height: 208px;
+	top: 50%;
+	left: 50%;
+	margin-top: -134px;
+	margin-left: -556px;
+}
+
+.bannerImg {
+	width: 100%;
+	height: 540px;
+	background: url(../images/P9_bg01.jpg) no-repeat center -160px;
+}
+
+.bannerBtn {
+	padding: 10px;
+}
+
+.bannerBtn a {
+	padding: 0 24px;
+	height: 40px;
+	font-size: 16px;
+	line-height: 40px;
+	display: inline-block;
+	color: #fff;
+	background: #b02d2e;
+	border-radius: 5px;
+}
+
+.p9 {
+	display: none;
+}
+
+/* showList */
+		/* 第一行 */
+.rowOne {
+	width: 100%;
+	height: 769px;
+	margin-bottom: 21px;
+}
+
+.colOne {
+	float: left;
+	overflow: hidden;
+	position: relative;
+	width: 695px;
+	height: 769px;
+}
+
+.colTwo {
+	float: right;
+}
+
+.colTwo .top{
+	width: 100%;
+	height: 374px;
+	margin-bottom: 21px;
+	position: relative;
+}
+
+.colTwo .down {
+	margin-bottom: 0;
+	overflow: hidden;
+}
+
+/* 第二行 */
+.rowTwo {
+	width: 100%;
+	height: 374px;
+	margin-bottom: 21px;
+}
+
+.rowTwo .colOne {
+	height: 374px;
+}
+
+.rowTwo .right {
+	float: right;
+}
+
+/* 遮罩层 */
+.showListAnimate:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0);
+	transition: all 0.6s;
+	cursor: pointer;
+}
+
+.showImg img {
+	width: 110%;
+	height: auto;
+	transition: all 0.6s;
+	display: block;
+}
+
+.showInfo {
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin:0 0 30px 30px;
+	z-index: 2;
+	padding-right: 168px;
+}
+
+.showInfo a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.showInfo h3 {
+	font-size: 30px;
+	font-weight: normal;
+	transform: translateY(64%);
+	transition: all 0.7s;
+
+}
+
+.showInfo p {
+	font-size: 16px;
+	line-height: 1.8rem;
+	transform:translateY(80%);
+	opacity: 0;
+	transition: all 0.6s;
+}
+
+/* 鼠标移上 */
+.showListAnimate:hover:after {
+	background: rgba(0,0,0,0.4);
+}
+.showListAnimate:hover img {
+	margin-left: -20px;
+}
+
+.showListAnimate:hover h3, 
+.showListAnimate:hover p {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+/* video */
+#video {
+	position: relative;
+	margin-bottom: 21px;
+}
+
+#video img {
+	width: 100%;
+}
+
+.videoIn {
+	position: absolute;
+	height: 540px;
+	width: 100%;
+	overflow: hidden;
+	top: 0;
+	left:0;
+}
+
+.videoIn h3 {
+	font-size: 40px;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 100px;
+	color: #fff;
+}
+
+.videoIn a {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../images/video_btn.png) no-repeat center center;
+}
+
+.videoIn a:hover {
+	background: url(../images/video_btn_hover.png) no-repeat center center;
+}
+
+/* news */
+#news { 
+	width: 100%; 
+	height: 342px; 
+	background: #f5f5f5; 
+	padding-bottom: 10px; 
+}
+
+.newsIn { 
+	width: 1200px; 
+	padding-bottom: 10px; 
+	overflow: hidden; 
+	margin: 0 auto;
+}
+
+.newsList { 
+	padding:0 15px; 
+	width: 380px; 
+	font-size: 16px; 
+	float: left;
+}
+
+.newsIn .title { 
+	padding: 20px 0; 
+	font-size: 24px; 
+	font-weight: normal;
+}
+
+.newsList li { 
+	line-height: 24px; 
+	margin-bottom: 12px;
+}
+
+.newsList li span { 
+	display: block; 
+	font-size: 12px; 
+	color: #999; 
+}
+
+.acti{ 
+	float:right; 
+	width: 770px; 
+}
+
+.actiList { 
+	overflow: hidden;
+}
+
+.actiList dl { 
+	width: 340px; 
+	float: left;
+}
+
+.actiList dl.right { 
+	float: right;
+}
+
+.actiList dt img { 
+	width: 340px;
+}
+
+.actiList dd { 
+	line-height: 28px; 
+	font-size: 16px;
+}
+
+.actiList dd h3 { 
+	font-weight: normal; 
+	font-size: 18px;
+	line-height: 40px;
+}
+
+
+/* footer */
+#footer {
+	width: 100%;
+	height: 330px;
+	background: #272727;
+	color: #ccc;
+	padding-top: 37px;
+}
+
+#footer a {
+	color: #ccc;
+}
+
+.subNav { 
+	width: 1200px; 
+	overflow: hidden; 
+	margin: 0 auto; 
+	padding: 0 15px 20px;
+}
+
+.subNavList { 
+	float: left; 
+	width: 785px;
+}
+
+.SNLInfo { 
+	float: left; 
+	width: 192px;
+}
+
+.SNLInfo h3 { 
+	height: 30px; 
+	font-size: 16px; 
+	font-weight: normal;
+}
+
+.SNLInfo ul li { 
+	line-height: 22px; 
+	font-size: 14px;
+}
+
+.SNLInfo .industry{ 
+	margin-top: 20px;
+}
+
+.contact { 
+	width: 385px; 
+	float: right;
+}
+
+.share { 
+	margin-top: 10px;
+}
+
+.wechat { 
+	margin: 15px 0;
+}
+
+.copyRight { 
+	width: 100%; 
+	border-top: 1px solid #424141; 
+	line-height: 44px; 
+	overflow: hidden; 
+	font-size: 14px;
+}
+.copyRightIn { 
+	width: 1200px; 
+	margin: 0 auto; 
+	padding: 0 15px; 
+	overflow: hidden;
+}
+
+.copyRightIn .comInfo { 
+	float: left;
+}
+
+.copyRightIn .link { 
+	float: right; 
+	margin-right: 180px;
+}
+
+.copyRightIn .link span {
+ 	margin: 0 10px;
+}
+
+/* 加响应式 */
+
+/* header */
+
+.wrapper {
+	max-width: 1440px;
+	width: 100%;
+}
+
+/* banner */
+.bannerIn {
+	margin-bottom: 1.56%;
+}
+
+/* showList */
+.rowOne {
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 1.48%;
+}
+
+.colOne {
+	width: 49.29%;
+	height: auto;
+}
+
+.colTwo .top {
+	height: auto;
+	margin-bottom: 3%;
+}
+
+.colTwo .down {
+	margin-bottom: 0;
+}
+
+.rowTwo {
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 1.48px;
+}
+
+.rowTwo .colOne {
+	height: auto;
+}
+
+.showInfo {
+	padding-right: 0;
+}
+
+/* video */
+
+#video {
+	margin-bottom: 1.48px;
+}
+
+.videoIn {
+	height: 100%;
+}
+
+.videoIn h3 {
+	margin-top: 7.09%;
+}
+
+/* news */
+.newsIn {
+	max-width: 1200px;
+	width: 100%;
+}
+
+.newsList {
+	width: 31.66%;
+}
+
+.acti { 
+	width: 64.16%; 
+}
+
+.actiList dl {
+	width: 49%;
+}
+
+.actiList dt img {
+	width: 100%;
+}
+
+/* footer */
+.subNav {
+	max-width:1200px; 
+	width: 100%;
+}
+
+.subNavList {
+	width: 67.09%;
+}
+
+.contact {
+	width: 32.9%;
+}
+
+.SNLInfo {
+	width: 25%;
+}
+
+
+.copyRightIn {
+	max-width:1200px; width: 100%;
+}
+
+.copyRightIn .link {
+	margin-right: 15.38%;
+}
+

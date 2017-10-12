@@ -1,0 +1,98 @@
+/* header */
+.nav {
+	display: none;
+}
+
+.navmore {
+	display: block;
+}
+
+/* banner */
+
+.bannerIn {
+	height:auto;
+}
+
+.bannerImg {
+	background:url(../images/p9_mobile.jpg) no-repeat top center; 
+	background-size:100% auto; 
+	height:auto; 
+	padding-top:56.29%;
+}
+
+.bannerInfo {
+	display: none;
+}
+
+.p9 {
+	display: block; 
+	background:#333333; 
+	color:#fff; 
+	padding:20px 0 20px 15px; 
+	line-height: 24px; 
+	font-size: 14px;
+}
+
+.p9 h3 {
+	font-weight: normal;
+}
+
+/* showList */
+.showInfo h3 {
+	font-size: 22px;
+}
+
+.showInfo p {
+	line-height: 1.2em; 
+	font-size: 14px;
+}
+
+.showInfo {
+	margin-left: 15px;
+}
+
+/* video */
+.videoIn h3 {
+	font-size: 22px;
+}
+
+/* news */
+#news{
+	height:auto;
+}
+
+/* footer */
+#footer {
+	height:auto;
+}
+
+.subNavList {
+	width: 100%;
+}
+
+.contact {
+	width: 100%; 
+	padding-top: 20px;
+}
+
+.wechat,
+.wechatTitle {
+	display: none;
+}
+
+.share {
+	text-align: center;
+}
+
+.copyRightIn {
+	text-align: center;
+}
+
+.copyRightIn .comInfo {
+	display: none;
+}
+
+.copyRightIn .link {
+	float: none; 
+	margin-right: 0;
+}
