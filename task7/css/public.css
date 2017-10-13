@@ -1,0 +1,101 @@
+@charset "utf-8";
+html {
+    font-size: 62.5%;
+    font-family: "Microsoft YaHei", serif;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 40%;
+    }
+}
+/* CSS Document */
+html, body, div, span, object, iframe,h1, h2, 
+h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn, 
+em, img, ins,kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd, 
+ol, ul, li,fieldset, form, label, legend,table, caption, tbody, 
+tfoot,thead,tr, th, td,article, aside, canvas, details, figcaption, 
+figure, footer, header, hgroup, menu, nav, section, summary,time, mark, 
+audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+    font-weight: normal;
+    outline-style:none;/*FF*/ 
+}
+
+body {
+    line-height:1;
+}
+ 
+a {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    text-decoration: none;
+    vertical-align:baseline;
+    background:transparent;
+    display: block;
+     
+}
+a:hover,a:focus {
+    text-decoration:none;
+    bblr:expression(this.onFocus=this.blur());/*IE*/
+    outline-style:none;/*FF*/ 
+    }
+img {
+    max-width:100%;
+    border: none;
+}
+ 
+input, select {
+    vertical-align:middle;
+}
+
+/*css为clearfix，清除浮动*/
+.clearfix:after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+} 
+.clearfix{ 
+    *zoom:1;/*IE/7/6*/
+}
+
+ul {
+    list-style: none;
+}
+
+.wrap {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    font-size: 3.2rem;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    background: #29bde0;
+}
+
+.main {
+    overflow: hidden;
+    text-align: center;
+}
