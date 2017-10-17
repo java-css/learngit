@@ -1,98 +1,96 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/learngit\/task11\/login\.scss}line{font-family:\0000313}}
 html {
   font-size: 62.5%;
-  font-family: "Microsoft YaHei", serif;
-}
+  font-family: "Microsoft YaHei", serif; }
 
 @media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/learngit\/task11\/login\.scss}line{font-family:\0000319}}
   html {
-    font-size: 50%;
-  }
-}
+    font-size: 50%; } }
 @media screen and (max-width: 400px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/learngit\/task11\/login\.scss}line{font-family:\0000325}}
   html {
-    font-size: 50%;
-  }
-}
+    font-size: 50%; } }
 /* CSS Document */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/learngit\/task11\/login\.scss}line{font-family:\0000330}}
 html, body, div, ul, li {
   margin: 0;
   padding: 0;
-  border: 0;
-}
+  border: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/learngit\/task11\/login\.scss}line{font-family:\0000336}}
 img {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/learngit\/task11\/login\.scss}line{font-family:\0000340}}
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/learngit\/task11\/login\.scss}line{font-family:\0000344}}
 body {
-  background-color: #eff0f4;
-}
+  background-color: #eff0f4; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/learngit\/task11\/login\.scss}line{font-family:\0000348}}
 .header {
   margin: 0 auto;
   height: 4rem;
   line-height: 4rem;
   background: #5fc0ce;
   text-align: center;
-  font-size: 1.6rem;
-}
-.header .left {
-  float: left;
-  margin-left: 1.2rem;
-  color: #fff;
-}
-.header .right {
-  float: right;
-  margin-right: 1.2rem;
-  color: #fff;
-}
-.header span {
-  font-size: 2rem;
-  font-weight: normal;
-  color: #fff;
-}
+  font-size: 1.6rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/learngit\/task11\/login\.scss}line{font-family:\0000356}}
+  .header .left {
+    float: left;
+    margin-left: 1.2rem;
+    color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/learngit\/task11\/login\.scss}line{font-family:\0000360}}
+  .header .right {
+    float: right;
+    margin-right: 1.2rem;
+    color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/learngit\/task11\/login\.scss}line{font-family:\0000364}}
+  .header span {
+    font-size: 2rem;
+    font-weight: normal;
+    color: #fff; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/learngit\/task11\/login\.scss}line{font-family:\0000371}}
 form ul li {
   padding: 1rem 0;
   margin: 8px 0;
-  background: #fff;
-}
-form ul li label {
-  display: inline-block;
-  width: 5%;
-  margin: 0 1rem;
-  text-align: center;
-  vertical-align: middle;
-}
-form ul li input {
-  width: 85%;
-  font-size: 1.6rem;
-  text-indent: 2rem;
-  vertical-align: middle;
-  border: none;
-  border-left: 1px solid #eaedee;
-  line-height: 3rem;
-}
+  background: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/learngit\/task11\/login\.scss}line{font-family:\0000376}}
+  form ul li label {
+    display: inline-block;
+    width: 5%;
+    margin: 0 1rem;
+    text-align: center;
+    vertical-align: middle; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/learngit\/task11\/login\.scss}line{font-family:\0000384}}
+  form ul li input {
+    width: 85%;
+    font-size: 1.6rem;
+    text-indent: 2rem;
+    vertical-align: middle;
+    border: none;
+    border-left: 1px solid #eaedee;
+    line-height: 3rem; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/learngit\/task11\/login\.scss}line{font-family:\0000395}}
 .button {
   width: 100%;
-  font-size: 1.6rem;
+  font-size: 2rem;
   border: none;
   padding: 1.2rem;
   color: #fff;
   background: #5fc0ce;
-  font-family: Microsoft YaHei, serif;
-}
+  font-family: Microsoft YaHei, serif; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Jason\/learngit\/task11\/login\.scss}line{font-family:\00003105}}
 p {
   float: right;
   margin: 1rem;
   color: #5FC0CD;
-  font-size: 1.6rem;
-}
+  font-size: 1.6rem; }
 
 /*# sourceMappingURL=login.css.map */
