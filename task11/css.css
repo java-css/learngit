@@ -1,0 +1,104 @@
+@charset "utf-8";
+html {
+    font-size: 62.5%;
+    font-family: "Microsoft YaHei", serif;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 50%;
+    }
+}
+/* CSS Document */
+html, body, div,ul,li {
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    background-color: #eff0f4;
+}
+
+.header {
+	margin: 0 auto;
+	height:4rem;
+	line-height: 4rem;
+	background: #5fc0ce;
+	text-align: center;
+	font-size: 1.6rem;
+}	
+
+.header .left {
+	float: left;
+	margin-left: 1.2rem;
+	color: #fff;
+}
+
+.header .right {
+	float: right;
+	margin-right: 1.2rem;
+	color: #fff;
+}
+
+.header span {
+	font-size: 2rem;
+	font-weight: normal;
+	color: #fff;
+}
+
+form ul li {
+	padding: 1rem 0;
+	margin: 8px 0;
+	background: #fff;
+}
+
+label {
+	display: inline-block;
+	width: 5%;
+	margin: 0 1rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+form input {
+	width: 85%;
+    font-size: 1.6rem;
+    text-indent: 2rem;
+    vertical-align: middle;
+    border: none;
+    border-left: 1px solid #eaedee;
+    line-height: 3rem;
+}
+
+.button {
+    width: 100%;
+    font-size: 1.6rem;
+    border: none;
+    padding: 1.2rem;
+    color: #fff;
+    background: #5fc0ce;
+    font-family: Microsoft YaHei, serif;
+} 
+
+p {
+	float: right;
+	margin: 1rem;
+	color: #5FC0CD;
+	font-size: 1.6em;
+}

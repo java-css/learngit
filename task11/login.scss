@@ -1,0 +1,115 @@
+@charset "utf-8";
+$width:100%;
+$font-size:1.6rem;
+$margin:1.2rem;
+$color:#fff;
+
+@mixin flt($float) {
+  float: $float;
+  margin-#{$float}: $margin;
+  color:#fff;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Microsoft YaHei", serif;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+}
+/* CSS Document */
+html, body, div,ul,li {
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #eff0f4;
+}
+
+.header {
+  margin: 0 auto;
+  height:$font-size + 2.4;
+  line-height: $font-size + 2.4;
+  background: #5fc0ce;
+  text-align: center;
+  font-size: $font-size;
+
+  .left {
+    @include flt(left);
+  }
+
+  .right {
+    @include flt(right);
+  }
+
+  span {
+    font-size: $font-size + .4;
+    font-weight: normal;
+    color: $color;
+  }
+}
+
+form ul li {
+  padding: 1rem 0;
+  margin: 8px 0;
+  background: $color;
+
+  label {
+    display: inline-block;
+    width: 5%;
+    margin: 0 1rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  input {
+    width: 85%;
+    font-size: $font-size;
+    text-indent: $font-size + .4;
+    vertical-align: middle;
+    border: none;
+    border-left: 1px solid #eaedee;
+    line-height: $font-size + 1.4;
+  }
+}
+
+.button {
+  width: 100%;
+  font-size: $font-size;
+  border: none;
+  padding: $margin;
+  color: $color;
+  background: #5fc0ce;
+  font-family: Microsoft YaHei, serif;
+}
+
+p {
+  float: right;
+  margin: $margin - .2;
+  color: #5FC0CD;
+  font-size:$font-size;
+}
+
+
+
+
+
