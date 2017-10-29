@@ -1,8 +1,7 @@
 var boxs = document.getElementById('header').getElementsByTagName('div'); 
 var colors = ['red','plum','blue','green','cyan','black','pink','gray','brown'];
-
-function start(){
-	t = setInterval(function(){
+var timer = null;
+function changes(){
 		for (var i = 0; i < boxs.length; i++) {
 			boxs[i].style.background = "#ffa600";
 		}
@@ -45,7 +44,13 @@ function start(){
 		console.log(arr[i]);
 		console.log(i);
 	}
+}
 
+
+function start(){
+	clearInterval(timer);
+	timer = setInterval(function(){
+		changes();
 	},1000)
 }
 
@@ -53,7 +58,7 @@ function stop(){
 	for (i = 0; i < boxs.length; i++) {
 		boxs[i].style.background="#ffa600";
 	}
-	clearInterval(t);
+	clearInterval(timer);
 }
 
 
