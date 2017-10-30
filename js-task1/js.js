@@ -1,5 +1,17 @@
 var boxs = document.getElementById('header').getElementsByTagName('div'); 
-var colors = ['red','plum','blue','green','cyan','black','pink','gray','brown'];
+
+var colors = [];
+while (colors.length < 10){
+    for (var i = 0; i < 3; i++) {
+        var r = Math.round((Math.random()*255)).toString(16);
+		var g = Math.round((Math.random()*255)).toString(16);
+		var b = Math.round((Math.random()*255)).toString(16);
+		var color = "#"+r+g+b;
+        } 
+        colors.push(color);
+    }
+   
+
 var timer = null;
 function changes(){
 		for (var i = 0; i < boxs.length; i++) {
@@ -40,8 +52,6 @@ function changes(){
 
 		for (var i = 0; i < arr.length; i++) {
 		boxs[arr[i]].style.background=colors[arr1[i]];
-		console.log(boxs[arr[i]]);
-		console.log(arr[i]);
 		console.log(i);
 	}
 }
