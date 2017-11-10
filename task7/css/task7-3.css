@@ -1,0 +1,109 @@
+@charset "utf-8";
+.wrap {
+    background: #29bde0;
+}
+/*左图标*/
+.header-left {
+	position: absolute;
+	top: 1%;
+	left: 3%;
+	width: 51px; 
+	height: 42px;
+    background: url(../images/p7.png) -187px -235px;
+}
+
+.title {
+	text-align: center;
+	font-size: 3.4rem;
+	line-height: 5.4rem;
+	color: #fff;
+	border-bottom: 1px solid #74d4eb;
+}
+.header-right {
+	position: absolute;
+	top: 1%;
+	right: 3%;
+	width: 40px; 
+	height: 40px;
+    background: url(../images/p7.png) -258px -235px;
+}
+.victory {
+	padding: 3% 9% 9%;
+	color: #ffc865;
+}
+
+.main-middle {
+	overflow: hidden;
+	margin: 0 9%;
+	text-align: left;
+	color: #fff;
+}
+
+.main-middle .result {
+	font-size: 2.6rem;
+	line-height: 150%;
+	text-align: left;
+	text-decoration: none;
+}
+
+.main-bottom {
+	text-align: left;
+	background: #fff;
+}
+
+.main-bottom .detail {
+	position: relative;
+	margin: 0 auto;
+	padding: 2% 10%;
+	border-bottom: 2px solid #ddd;
+}
+
+.detail h2 {
+	padding: 2% 0;
+	font-size: 3rem;
+	color: #515151;
+}
+
+.detail span {
+	position: absolute;
+	top: 10%;
+	right: 21%;
+	font-size: 2rem;
+	line-height: 2;
+	color: #c7c7c7;
+}
+
+.detail p {
+	padding: 2% 0;
+	font-size: 2.6rem;
+	line-height: 1.5;
+	color: #a6a6a6;
+
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 640px;
+    background-color: #99dff0;
+    opacity: 0.85;
+}
+
+button {
+    float: left;
+    width: 45%;
+    margin: 2.5%;
+    padding: 2%;
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+    border-radius: 1rem;
+}
+
+button.again {
+	background: #f66f6f;
+}
+
+button.share {
+	background: #fbb435;
+}

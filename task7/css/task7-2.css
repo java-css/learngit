@@ -1,0 +1,174 @@
+@charset "utf-8";
+.wrap {
+    background: #29bde0;
+}
+
+.header {
+    padding: 1rem;
+}
+
+.header-left {
+    float: left;
+    width: 9%;
+    max-width: 30px;
+}
+
+.header h2 {
+    font-size: 3.2rem;
+    display: inline-block;
+}
+
+.header-right {
+    float: right;
+    width: 8%;
+    max-width: 30px;
+}
+
+.main-top {
+    position: relative;
+}
+
+.main-top button {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    background: rgba(225, 225, 225, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.text1 {
+    padding: 2% 2% 2% 5%;
+    font-size: 2.6rem; /*26px*/
+    line-height: 2.6rem;
+    text-align: left;
+    background-color: #B9E9F5;
+    opacity: 0.5;
+}
+
+/*圆形*/
+.circle {
+    width: 3rem;
+    height: 3rem;
+    background-color: #Fbb435;
+    border-radius: 50%;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 50%;
+    border: 1px rgba(225, 225, 225, 0.5) solid;
+}
+
+/*左三角*/
+.triangle-left {
+    width: 0;
+    height: 0;
+    margin: 12% 22%;
+    padding: 1% 0;
+    border-top: 1rem solid transparent;
+    border-left: 2rem solid white;
+    border-bottom: 1rem solid transparent;
+
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    margin-left: 5%;
+    border-top: 1rem solid rgba(225, 225, 225, 0.5);
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+}
+
+.text2 {
+    font-size: 2.4rem; /*24px*/
+    line-height: 2.4rem;
+    text-align: left;
+    color: white;
+    padding-left: 7%;
+}
+
+.main-middle {
+    overflow: hidden;
+    padding-bottom: 30%;
+}
+
+.box {
+    box-sizing: border-box;
+    float: left;
+    width: 24%;
+    margin: 4% 0 2% 7%;
+    text-align: center;
+
+}
+
+.box-top {
+    border: 3px solid white;
+
+}
+
+.identity {
+    padding: 25% 0;
+    font-size: 3rem;
+    background: #f5c97b;
+}
+
+.number {
+    font-size: 2.276rem; /*22.76px*/
+    color: white;
+    background: #83b09a;
+}
+
+.box-bottom {
+    width: 100%;
+    margin-top: 5%;
+    font-size: 0;
+    opacity: 0;
+}
+
+.box-bottom li {
+    display: inline-block;
+    width: 25%;
+    padding: 12.5% 0;
+    background-image: url(../images/15.png);
+    background-repeat: no-repeat;
+    background-size: 400%;
+}
+
+.kill {
+    background-position: 0 0;
+}
+
+.search {
+    background-position: 34% 0;
+}
+
+.aim {
+    background-position: 67% 0;
+}
+
+.salvation {
+    background-position: 100% 0;
+}
+
+
+.box:hover .box-bottom {
+    opacity: 1;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 640px;
+    text-align: center;
+    background: #29bde0;
+    border-top: 1px white solid;
+}
+
+.footer button {
+    padding: 5% 30%;
+    margin: 5% auto;
+    font-size: 3rem;
+    color: white;
+    background: #fbb435;
+    border-top: 1px white solid;
+}

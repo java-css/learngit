@@ -1,0 +1,18 @@
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .box {
+            width: 100%;
+            padding-bottom: 100%;
+    	}
+    .box>div{
+    		width: 30%;
+    		padding-bottom: 30%;
+            border: solid 1px orange;
+            background-color: orange;
+            border-radius: 8%;
+            float: left;
+    		margin: 1%;           
+    	}   

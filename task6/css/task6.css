@@ -1,0 +1,251 @@
+﻿/*头部*/
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 48px;
+    background-color: #5fc0cd;
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.header .s1 {
+    display: inline-block;
+    background-color: #55a8b3;
+    font-size: 17px;
+    width: 75px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+.header .s2 {
+    display: inline-block;
+    background-color: white;
+    font-size: 17px;
+    width: 75px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    color: #5fc0cd;
+    margin-left: -10px;
+    border: none;
+}
+
+.header .s3 {
+    position: relative;
+    top: -30px;
+    right: 20px;
+    float: right;
+}
+/*.header .s3 {
+    top: 2px;
+    right: 10px;
+    width: 2.625rem;
+    height: 2.75rem;
+    background: url(../images/t6.png) no-repeat -7.75rem -0.625rem;
+    position: fixed;
+    cursor: pointer;
+}*/
+/*菜单选择*/
+.menu {
+    margin-top: 44px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e1e5e7;
+}
+.menu>div {
+    width: 33.33%;
+    float: left;
+    line-height: 20px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropbtn {
+    background-color: #fff;
+    color: #999;
+    padding:15px;
+    font-size:1rem;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn .s1 {
+    margin-top: 8px;
+    float: right;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #999;
+}
+
+.split {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 1px;
+    height: 40px;
+    background: url("../images/split.png");
+    background-size: cover;
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: #999;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+/*主题部分*/
+.list > div {
+    width: 100%;
+    height: 90px;
+    padding: 16px;
+    border-bottom: 1px solid #e1e5e7;
+    box-sizing: border-box;
+}
+
+.list > div:last-child {
+    margin-bottom: 50px;
+}
+
+.s-ser {
+    width: 100%;
+    font-size: 14px;
+    line-height: 14px;
+    color: #999999;
+    padding-left: 18px;
+    margin-bottom: 10px;
+    background: url(../images/t6.png) no-repeat -93px -66px;
+    background-size: auto 87px;
+
+}
+
+.s-time {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.s-time .s1 {
+    display: inline-block;
+    width: 50%;
+    padding-left: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.s-time .s2 {
+    position: absolute;
+    right: 20px;
+    color: red;
+}
+
+.s-time .s3 {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 9.5px; 
+    height: 16.5px;
+    margin-left: 10px;
+    background: url(../images/t6.png) no-repeat -38px -62px;
+    background-size: auto 87px;
+}
+
+.s-local {
+    width: 100%;
+    font-size: 14px;
+    line-height: 13px;
+    color: #999999;
+    padding-left: 18px;
+    background: url(../images/t6.png) no-repeat -62px -37px;
+    background-size: auto 87px;
+}
+/*页脚*/
+.footer {
+    position: fixed;
+    bottom: -15px;
+    width: 100%;
+    line-height: 47px;
+    background-color: #f8fafb;
+    text-align: center;
+    box-sizing: border-box;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+/*.footer span:first-child, .footer span:last-child {
+    margin: 10px 0;
+}*/
+.footer span {
+    white-space: nowrap;
+}
+.footer .s1 {
+    display: inline-block;
+    padding-top: 12px;
+    background: url(../images/t6.png) no-repeat -5px -62px;
+    background-size: auto 87px;
+    float: left;
+    font-size: 10px;
+    color: #5fc0cd;
+    cursor: pointer;
+}
+
+.footer .s2 {
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    background: url(../images/t6.png) no-repeat -5px -5px;
+    background-size: auto 87px;
+    cursor: pointer;
+}
+
+.footer .s3 {
+	padding-top: 12px;
+	display: inline-block;
+    background: url(../images/t6.png) no-repeat -93px -5px;
+    background-size: auto 87px;
+    float: right;
+    font-size: 10px;
+    color: #999999;
+    cursor: pointer;
+}

@@ -1,0 +1,136 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	max-width: 720px;
+	min-width: 320px;
+	margin: 0 auto;
+	font-size: 1rem;
+	font-family: "Microsoft YaHei",serif;
+	color: #999;
+}
+#header{
+    padding: 1% 0;
+    background: #5fc0cd;
+    overflow: hidden;
+    line-height: 200%;
+    text-align: center;
+}
+.header-img {
+    float: right;
+    margin: 2% 4% 0 0;
+}
+.header-box {
+    margin: 0 30%;
+    background: #55a8b3;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.header-left {
+    color: #FFF;
+    background: #55a8b3;
+    float: left;
+    width: 50%;
+}
+.header-right {
+    float: right;
+    color: #55a8b3;
+    background: #FFF;
+    border-radius: 1rem;
+    width: 50%;
+}
+.header-left, .header-right {
+    padding: 3% 0;
+}
+/*#header{
+	display: flex;
+	padding: 1% 0;
+	text-align: center;
+	background: #5FC0CD;
+	justify-content: center;
+	line-height: 300%;
+}
+
+.header-box{
+	display: flex;
+	width: 30%;
+	background: #55A8B3;
+	overflow: hidden;
+	border-radius: 0.5rem;
+}
+.header-left{
+	color: #FFF;
+	background: #55A8B3;
+	float: left;
+	width: 50%;
+}
+.header-right{
+	float: right;
+	color:#55A8B3;
+	background: #FFF;
+	border-radius: 0.5rem;
+	width:50%;
+}*/
+#choose{
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid #E1E5E7;
+	padding: 2% 0;
+}
+#choose>div{
+	width: 50%;
+	text-align: center;
+	border-right: 1px solid #E1E5E7;
+}
+.choose-icon{
+	float: right;
+	-webkit-box-flex: 1;
+    -webkit-flex: 1;
+    border-top: 0.3rem solid  #999;
+    border-left: 0.3rem solid transparent;
+    border-right: 0.3rem solid transparent;
+    margin-top: 4%;
+    margin-right: 10%;
+}
+
+#choose>div:last-child{
+	border-style: none;
+}
+#main>div{ 
+	border-bottom: 1px solid #E1E5E7;
+	padding: 1% 5%;
+}
+.main-top img,.main-bottom img{
+	vertical-align: middle;
+	margin: 1%;
+}
+.main-middle{
+	margin: 1% 4% 0 ;
+	display: flex;
+	justify-content: space-between;
+}
+.main-middle-right{ 
+	display: flex;
+	flex-direction: row;
+	vertical-align: middle;
+}
+#main p{
+	white-space:nowrap;
+	margin-right: 1rem;
+	color: #E63B0E;
+}
+#footer{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+.footer-left,.footer-right{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+#footer img{
+	margin-bottom: 0.8rem;
+}
