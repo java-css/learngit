@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/playSet.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <title>参数设置</title>
+  </head>
+  <body>
+    <div id="all">
+      <div id="header">
+      <a href="index.html">
+          <div class="icon-left"></div>
+      </a> 
+      参数设置
+      <a href="index.html">
+          <div class="icon-right"></div>
+      </a> 
+    </div>
+    <div id="main">
+      <div id="set">
+        <div class="set-left">
+          <p>玩<br/>家<br/>配<br/>比</p>
+        </div>
+        <div class="set-right">
+          <div class="row">
+            <ul class="list">
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+              <li class="set col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                <span>水  民</span>1  人</li>
+            </ul>
+          </div>
+          <button class="setting" onclick="set()">点击设置&nbsp;&nbsp;<span class="glyphicon glyphicon-pencil"></span></button>
+        </div>
+      </div>
+    </div>
+      <div id="phrase">
+        <input type="text" placeholder="水民词组">
+        <input type="text" placeholder="杀手词组">
+      </div>
+      <div id="peopleNum">
+        <div>玩家人数&nbsp;&nbsp; <input type="text" value="6" id="Num" onchange="on_change()">&nbsp;&nbsp;&nbsp;&nbsp;人</div>
+        <div>
+          <input type="button" value="-" id="less" onclick="less()">
+          <input type="range" value="6" max="18" min="6" id="range" onmousemove="change()">
+          <input type="button" value="+" id="plus" onclick="add()">
+        </div>
+      </div>
+      <div id="sub">
+        <button type="button" onclick="to_flop()" >去发牌</button>
+      </div>
+    </div>
+  <script src="js/task2-js.js"></script>
+  </body>
+</html>

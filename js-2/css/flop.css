@@ -1,0 +1,110 @@
+/*
+* @Author: Administrator
+* @Date:   2017-11-08 11:46:27
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-11-09 23:21:20
+*/
+.wrap {
+	background: #29bde0;
+}
+
+.header {
+	height: 7.5rem;
+	border-bottom: 1px solid #74d4eb;
+}
+
+.header span {
+	display: inline-block;
+	width: 75%;
+}
+
+.glyphicon {
+	width: 2rem;
+	color: #fff;
+}
+
+.header span, .header a {
+	margin: 2.5rem 0;
+	line-height: 3.6rem;
+}
+.main {
+	margin: 0 auto;
+	width:72.5%;
+}
+
+.box {
+	position: relative;	
+	margin: 4.8rem 0;
+	border:0.6rem solid #fff;
+	background: #ffedc5;
+}
+
+@media screen and (max-width: 400px) {
+    .box {
+        margin-bottom: 2rem;
+    }
+}
+
+.box span {
+	position: absolute;
+	top: -35px;
+	left: 42%;
+	width: 5rem;
+	height: 5rem;
+	line-height: 4.5rem;
+	text-align: center;
+	border:3px solid #ffedc5;
+	border-radius: 50%;
+	background: #fff;
+	color: #f56b81;
+}
+@media screen and (max-width: 320px) {
+    .box span {
+        left: 38%;
+    }
+}
+
+
+.flop-show {
+	margin: 7rem 0;
+	
+}
+
+@media screen and (max-width: 400px) {
+    .flop-show {
+        margin: 5rem 0;
+    }
+}
+
+.flop-first {
+	margin: 12rem 0;
+}
+
+@media screen and (max-width: 400px) {
+    .flop-first {
+        margin: 6rem 0;
+    }
+}
+
+
+.box p {
+	border:1px solid #fff;
+	line-height: 10rem;
+	color: #29bde0;
+}
+
+.footer {
+	margin: 4rem auto;
+	text-align: center;
+	width: 80%;
+	background: #fbb435;
+	color: #fff;
+	line-height: 6rem;
+}
+.footer button {
+	background: #fbb435;
+	border:none;
+	width: 100%;	
+}
+
+

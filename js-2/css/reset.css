@@ -1,0 +1,45 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin:0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1220px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 52.5%;
+    }
+}
+
+@media screen and (max-width: 76px) {
+    html {
+        font-size: 42.5%;
+    }
+}
+
+body {
+    background: #fafafa;
+    font-family: Microsoft YaHei, serif;
+    font-size: 1.4rem;
+}
+
+h1 {
+    font-size: 3.6rem;
+    color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
