@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  <div class="container" id="box">
+    <form role="form">
+      <div class="form-group">
+        <label for="username">用户名:</label>
+        <input type="text" id="username" class="form-control" placeholder="请输入用户名" v-model="username">
+      </div>
+      <div class="form-group">
+        <label for="age">年  龄:</label>
+        <input type="text" id="age" class="form-control" placeholder="请输入年龄" v-model="age">
+      </div>
+      <div class="form-group">
+        <input @click="add()"type="button" value="添加" class="btn btn-primary">
+        <input type="reset" value="重置" class="btn btn-danger">
+      </div>
+    </form>
+    <hr>
+    <table class="table table-bordered table-hover">
+      <caption class="h3 text-info text-center">用户信息表</caption>
+      <tr class="text-danger">
+        <th class="text-center">序号</th>
+        <th class="text-center">姓名</th>
+        <th class="text-center">年龄</th>
+        <th class="text-center">操作</th>
+      </tr>
+      <tr class="text-center" v-for="(item,index) in myData">
+        <td>{{ index+1 }}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+        <td><button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#layer">Del</button></td>
+      </tr>
+      <tr v-show="myData.length!=0">
+        <td colspan="4" class="text-right">
+          <button :index="-2" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#layer">Del All</button>
+        </td>
+      </tr>
+      <tr v-show="myData.length==0">
+        <td colspan="4" class="text-center text-muted">
+          <p>No Data...</p>
+        </td>
+      </tr>
+    </table>
+    <!--模态框-->
+    <div role="dialog" class="modal fade bs-example-modal-sm" id="layer">
+      <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+              <h4 class="modal-tit le text-danger">确认删除吗？</h4>
+            </div>
+            <div class="modal-body text-right">
+              <button data-dismiss="modal" class="btn btn-primary btn-sm">取消</button>
+              <button @click="deletaMsg()" data-dismiss="modal" class="btn btn-danger btn-sm">确认</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/vue.js"></script>
+<script>
+  new Vue({
+    el:'#box',
+    data:{
+      myData:[],
+      username:'',
+      age:''
+    },
+    methods:{
+      add:function () {
+        this.myData.push({
+          name:this.username,
+          age:this.age
+        });
+          this.username='',
+          this.age=''
+      },
+      deletaMsg:function (index) {
+        if(index=-2){
+          this.myData=[]
+        }else{
+          this.myData.splice(index,1)
+        }
+      }
+    }
+  })
+</script>
+</html>
